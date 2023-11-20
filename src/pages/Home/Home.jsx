@@ -3,7 +3,7 @@ import './Home.css'
 
 const Home = () => {
 
-    return <div>Home.jsx</div>;
+    return <div>testing    </div>;
 };
 
 export default Home;
