@@ -1,11 +1,12 @@
 
 import './App.css'
+import Services from './pages/Services/Services'
 
 function App() {
 
   return (
     <div>
-      <h1>Sammi Nails</h1>
+      <Services />
         {/* <Routes>
             <Route path='/' element={<Home/>}/>
         </Routes> */}

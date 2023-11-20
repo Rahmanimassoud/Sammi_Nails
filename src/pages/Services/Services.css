@@ -1,0 +1,226 @@
+/* Services.css */
+
+body {
+    margin: 50px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 20px;
+  }
+  
+  .image-container {
+    position: relative;
+  }
+  
+  .heroimg {
+    width: 100%;
+    height: 500px;
+  }
+  
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+  }
+
+
+  /* PopularOptions.css */
+.popular-options-container h1{
+    border-bottom: 1px solid black; 
+    padding-bottom: 3px; 
+
+}
+.popular-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .popular-option {
+    width: 40%; 
+    padding: 10px;
+    margin: 5px;
+  }
+  .popular-option h2 {
+    border-bottom: 1px solid black; 
+    padding-bottom: 3px; 
+  }
+  
+  .popular-option:last-child {
+    margin-left: auto; 
+    margin-right: 100px;
+  }
+  
+  @media (max-width: 767px) {
+    .popular-option {
+      width: 100%; 
+      margin-left: 0; 
+    }
+  }
+ 
+  /* middle section imge */
+  .middle-section-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; 
+  }
+  #btn-middle-section {
+    color: rgb(206, 22, 22);
+  }
+  
+  .image-box {
+    flex: 1;
+    position: relative;
+  }
+  
+  .image-box img {
+    /* width: 100%; */
+    height: auto;
+  }
+  .img-box-img {
+    width: 400px;
+  }
+  
+  .text-box {
+    flex: 0 0 20%;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+    height: 200px;
+    margin-left: -4%; /* Overlap with the image */
+  }
+
+  /* Kids Section Styles */
+.kids-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+  }
+  
+  .kids-image-box {
+    flex: 1;
+  }
+  
+  .kids-image-box img {
+    width: 50%;
+    height: auto;
+  }
+  
+  .kids-text-box {
+    flex: 1;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+  .kids-text-box h2 {
+    border-bottom: 1px solid black;
+    padding-bottom: 3px; 
+  }
+
+  /* Waxing section style */
+  .waxing-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+  }
+  
+  .waxing-image-box {
+    flex: 1;
+  }
+  
+  .waxing-image-box img {
+    width: 50%;
+    height: auto;
+  }
+  
+  .waxing-text-box {
+    flex: 1;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+  .waxing-text-box h2 {
+    border-bottom: 1px solid black;
+    padding-bottom: 3px; 
+    margin-bottom: 10px;
+  }
+/* question section */
+.question {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 172, 172);
+    padding: 20px;
+    margin-top: 40px;
+  }
+  
+  .question button {
+    margin-top: 10px; 
+    padding: 10px;
+    background-color: rgb(255, 172, 172);;
+    border: 1px solid black;
+    cursor: pointer;
+  }
+
+
+  @media (min-width: 768px) {
+    /* Adjust styles for tablets and larger screens */
+    .text-box {
+      flex: 0 0 40%; /* Set the width to cover 40% of the image */
+      height: auto;
+    }
+  
+    .waxing-text-box,
+    .kids-text-box {
+      flex: 0 0 45%; /* Adjust the width as needed */
+    }
+  
+    .waxing-text-box h2,
+    .kids-text-box h2 {
+      margin-bottom: 5px; /* Adjust margin for smaller screens */
+    }
+  }
+  
+  @media (min-width: 992px) {
+    /* Adjust styles for desktop screens */
+    .text-box {
+      flex: 0 0 30%; /* Set the width to cover 30% of the image */
+    }
+  
+    .waxing-text-box,
+    .kids-text-box {
+      flex: 0 0 40%; /* Adjust the width as needed */
+    }
+  }
+  
