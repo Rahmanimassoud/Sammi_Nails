@@ -17,7 +17,7 @@
     margin: auto;
     width: 90%;
     display: grid;
-    grid-template-rows: 614px 400px  1000px 400px 1100px 418px 427px 561px;
+    grid-template-rows: 614px 400px  1000px 400px 1100px 418px 427px 1fr;
     gap: 10px;
     margin-top: 10px;
   }
@@ -90,7 +90,7 @@
   /* Quote code */
   .homepage-quote{
     background-image: url(../../Assets/CoverImages/pexels-karolina-grabowska-4210376.jpg);
-    background-position: center;
+    background-position: 0% 59%;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -163,16 +163,32 @@
 }
   /* Contact info */
   
-  .contact-info{
+  .contact-area{
     grid-row: 8;
+    display: flex;
+    width: 100%;
   }
   
+  .contact-google-maps{
+    width: 49%;
+  }
+
+  .contact-info{
+    width:49%;
+    text-align: left;
+  }
+
+  .contact-hours{
+    text-align: left;
+  }
   
   .phone-email{
     display: flex;
-    gap:10px
+    width: 95%;
+    text-align: left;
+  justify-content: space-between;
+
+
   }
   
-  .contact-info-image{
-    width: 50%;
-  }
+ 

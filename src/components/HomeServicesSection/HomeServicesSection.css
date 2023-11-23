@@ -27,7 +27,7 @@
   .services-list img{
     width: 70%;
     margin: auto;
-    margin-top: 10px;
+    margin-top: 30px;
     border-radius: 25px;
   } 
   
@@ -58,7 +58,7 @@
 .services-list div{
     display: flex;
     flex-direction: column;
-    width: 300px;          
+    width: 275px;          
     align-items: center;
     background-color: #dfd3c3;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;    }

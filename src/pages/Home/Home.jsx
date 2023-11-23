@@ -36,6 +36,7 @@ const Home = () => {
 
               {/* Testimonials */}
              <HomeTestimonials />
+
               <div className="cta">
                     <h2>Express Yourself with Unique Nails</h2>
                     <h3>Book an appointment today and let your nails shine with creativity.</h3>
@@ -44,8 +45,9 @@ const Home = () => {
                         <button>Learn More</button>
                     </div>
               </div>
+                  <div className="contact-area">
+
               <div className="contact-info">
-                    <div>
                           <h2>Contact Information</h2>
                           <p>Visit us to get in touch for all your nail needs.</p>
                           <div className='phone-email'>
@@ -60,7 +62,7 @@ const Home = () => {
                                       <p>(203)459-1234</p>
                                 </div>
                           </div>
-                          <div>
+                          <div className='contact-hours'>
                                 <h5>Hours</h5>
                                 <p>Monday: 9:30 am - 7:00 pm</p>
                                 <p>Tuesday: 9:30 am - 7:00 pm</p>
@@ -71,8 +73,10 @@ const Home = () => {
                                 <p>Sunday: 9:30 am - 4:00 pm</p>
                           </div>
                     </div>
-              </div>
-                          <img className='contact-info-image' src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png" alt="" />
+                              <div className='contact-google-maps'>
+                              <iframe className='contact-info-image' width="100%" height="600" title='SamiNails' frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=+(SamiNails)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/population/"></a></iframe>
+                              </div>
+                  </div>
               </div>
         )
 };

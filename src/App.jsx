@@ -6,21 +6,23 @@ import Gallery from './pages/Gallery/Gallery'
 import About from './pages/About/About'
 import Footer from './components/Footer/footer'
 import Navbar from './components/Navbar/Navbar'
+import Home from './pages/Home/Home'
 
 function App() {
 
   return (
     <div>
-      <Navbar />
+
 
     <Navbar />
-      {/* <Contact/>  */}
+    {/* <Home /> */}
+      <Contact/> 
 
       {/* <Gallery /> */}
 
       {/* <About/> */}
     <br />
-    {/* <Footer /> */}
+    <Footer />
 
         {/* <Routes>
             <Route path='/' element={<Home/>}/>
