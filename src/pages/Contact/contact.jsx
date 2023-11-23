@@ -8,6 +8,8 @@ import emailjs from 'emailjs-com';
 
 const Contact = () => {
 
+  const [emailSent,setEmailSent] = useState(null)
+
   const [contactFormData, setContactFormData] = useState({
     firstName: '',
     lastName: '',
@@ -17,7 +19,7 @@ const Contact = () => {
 
   const templateParams = {
     to_name: 'Sammi Nails', // Replace with the recipient's name or use formData.name
-    from_name: contactFormData.name,
+    from_name: contactFormData.firstName,
     message: contactFormData.message,
     from_email: contactFormData.email,
 };
@@ -25,9 +27,10 @@ const Contact = () => {
 const sendEmail = (e) => {
   e.preventDefault();
   emailjs
-      .send('service_2vc6v1d', 'template_zb0nf6o', templateParams, 'i_ylqs_VpN1QO5XSr')
-    .then(
-      (result) => {
+  .send('service_2vc6v1d', 'template_zb0nf6o', templateParams, 'i_ylqs_VpN1QO5XSr')
+  .then(
+    (result) => {
+        setEmailSent(true);
         console.log(result.text);
         // Handle success
       },
@@ -36,6 +39,7 @@ const sendEmail = (e) => {
         // Handle error
       }
     );
+    setEmailSent(null);
     setContactFormData({ 
       firstName: '',
     lastName: '',
@@ -52,69 +56,71 @@ const sendEmail = (e) => {
     }))
   }
 
+return (
+          <div className="contact-container">
+          <h1 className="navbar">Navbar</h1>
+          <div className="contact-content">
+            <div className="contact-info">
+              <h2>Contact Us!</h2>
+              <p>Feel free to reach out to us on social media for any questions</p>
+              <p>about nail designs or services! We're here to assist you.</p>
+              
+              <div className="contact-details">
+                <div className="detail">
+                <span className="icon icon-email"> <EmailIcon/> </span>
+                  <div className="text">
+                    <p>Email</p>
+                    <p>Send us an email today!</p>
+                    <p>sammnails@example.com</p>
+                  </div>
+                </div>
+                <div className="detail">
+                
+                  <span className="icon icon-phone"> <PhoneInTalkIcon/> </span>
+                  <div className="text">
+                    <p>Phone</p>
+                    <p>Call us for an appointment.</p>
+                    <p>(425) 379-6178</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="contact-form">
+              <div className="name-fields">
+                {/* Name Inputs */}
+                <input 
+                value={contactFormData.firstName}
+                name='firstName'
+                onChange={handleChange}
+                type="text" placeholder="First Name" />
+                <input 
+                value={contactFormData.lastName}
+                name='lastName'
+                onChange={handleChange}
+                type="text" placeholder="Last Name" />
+              </div>
+              {/* Email */}
+              <input 
+              value={contactFormData.email}
+              name='email'
+              onChange={handleChange}
+              type="email" placeholder="Email" />
+              {/* Message */}
+              <textarea 
+              value={contactFormData.message}
+              name='message'
+              onChange={handleChange}
+              placeholder="Message"></textarea>
+              {emailSent ? <h3 style={{color:"green",margin:'0'}}>Email sent</h3> : <></>}
+              <button onClick={(e)=>sendEmail(e)}type="submit">Send</button>
+            </div>
+          </div>
+          <h1 className="footer">Footer</h1>
+        </div>
+      );
+
 
   
-return (
-    <div className="contact-container">
-      <h1 className="navbar">Navbar</h1>
-      <div className="contact-content">
-        <div className="contact-info">
-          <h2>Contact Us!</h2>
-          <p>Feel free to reach out to us on social media for any questions</p>
-          <p>about nail designs or services! We're here to assist you.</p>
-          
-          <div className="contact-details">
-            <div className="detail">
-            <span className="icon icon-email"> <EmailIcon/> </span>
-              <div className="text">
-                <p>Email</p>
-                <p>Send us an email today!</p>
-                <p>sammnails@example.com</p>
-              </div>
-            </div>
-            <div className="detail">
-            
-              <span className="icon icon-phone"> <PhoneInTalkIcon/> </span>
-              <div className="text">
-                <p>Phone</p>
-                <p>Call us for an appointment.</p>
-                <p>(425) 379-6178</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="contact-form">
-          <div className="name-fields">
-            {/* Name Inputs */}
-            <input 
-            value={contactFormData.firstName}
-            name='firstName'
-            onChange={handleChange}
-            type="text" placeholder="First Name" />
-            <input 
-            value={contactFormData.lastName}
-            name='lastName'
-            onChange={handleChange}
-            type="text" placeholder="Last Name" />
-          </div>
-          {/* Email */}
-          <input 
-          value={contactFormData.email}
-          name='email'
-          onChange={handleChange}
-          type="email" placeholder="Email" />
-          {/* Message */}
-          <textarea 
-          value={contactFormData.message}
-          name='message'
-          onChange={handleChange}
-          placeholder="Message"></textarea>
-          <button onClick={(e)=>sendEmail(e)}type="submit">Send</button>
-        </div>
-      </div>
-      <h1 className="footer">Footer</h1>
-    </div>
-  );
 };
 
 export default Contact;
