@@ -1,5 +1,5 @@
 import React from "react";
-import "./Navbar.css";
+import "./navbar.css";
 import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
@@ -30,6 +30,8 @@ const Navbar = () => {
   const handleClick = () => {
     navigate("/contact");
   };
+
+  
   return (
     <nav id="navbar">
       <h1 className="siteName" onClick={() => navigate("/")}>

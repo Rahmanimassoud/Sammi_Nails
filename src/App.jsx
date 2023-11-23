@@ -4,7 +4,7 @@ import './App.css'
 import Contact from './pages/Contact/contact'
 import Gallery from './pages/Gallery/Gallery'
 import About from './pages/About/About'
-import Home from './pages/Home/Home'
+import Footer from './components/Footer/footer'
 import Navbar from './components/Navbar/Navbar'
 
 function App() {
@@ -13,12 +13,14 @@ function App() {
     <div>
       <Navbar />
 
+    <Navbar />
       {/* <Contact/>  */}
+
       {/* <Gallery /> */}
 
       {/* <About/> */}
-      <Home />
-
+    <br />
+    {/* <Footer /> */}
 
         {/* <Routes>
             <Route path='/' element={<Home/>}/>

@@ -2,125 +2,47 @@
 import EmailIcon from '@mui/icons-material/Email';
 import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
 import './contact.css';
-import { useState } from 'react';
-import emailjs from 'emailjs-com';
+import { ContactForm } from '../../components/ContactForm/contactForm';
 
 
 const Contact = () => {
 
-  const [emailSent,setEmailSent] = useState(null)
+  return (
+    <div className="contact-container">
+      
+      <div className="contact-content">
+        <div className="contact-info">
+          <h2>Contact Us!</h2>
+          <p>Feel free to reach out to us on social media for any questions</p>
+          <p>about nail designs or services! We're here to assist you.</p>
 
-  const [contactFormData, setContactFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    message:'',
-  })
-
-  const templateParams = {
-    to_name: 'Sammi Nails', // Replace with the recipient's name or use formData.name
-    from_name: contactFormData.firstName,
-    message: contactFormData.message,
-    from_email: contactFormData.email,
-};
-
-const sendEmail = (e) => {
-  e.preventDefault();
-  emailjs
-  .send('service_2vc6v1d', 'template_zb0nf6o', templateParams, 'i_ylqs_VpN1QO5XSr')
-  .then(
-    (result) => {
-        setEmailSent(true);
-        console.log(result.text);
-        // Handle success
-      },
-      (error) => {
-        console.log(error.text);
-        // Handle error
-      }
-    );
-    setEmailSent(null);
-    setContactFormData({ 
-      firstName: '',
-    lastName: '',
-    email: '',
-    message:'',
-  })
-};
-
-  const handleChange = (e) =>{
-    const {name , value } = e.target;
-    setContactFormData((prevState)=>({
-      ...prevState,
-      [name]: value,
-    }))
-  }
-
-return (
-          <div className="contact-container">
-          <h1 className="navbar">Navbar</h1>
-          <div className="contact-content">
-            <div className="contact-info">
-              <h2>Contact Us!</h2>
-              <p>Feel free to reach out to us on social media for any questions</p>
-              <p>about nail designs or services! We're here to assist you.</p>
-              
-              <div className="contact-details">
-                <div className="detail">
-                <span className="icon icon-email"> <EmailIcon/> </span>
-                  <div className="text">
-                    <p>Email</p>
-                    <p>Send us an email today!</p>
-                    <p>sammnails@example.com</p>
-                  </div>
-                </div>
-                <div className="detail">
-                
-                  <span className="icon icon-phone"> <PhoneInTalkIcon/> </span>
-                  <div className="text">
-                    <p>Phone</p>
-                    <p>Call us for an appointment.</p>
-                    <p>(425) 379-6178</p>
-                  </div>
-                </div>
+          <div className="contact-details">
+            <div className="detail">
+              <span className="icon icon-email"> <EmailIcon /> </span>
+              <div className="text">
+                <p>Email</p>
+                <p>Send us an email today!</p>
+                <p>samminails@example.com</p>
+                <p>Email: <a href="mailto:samminails@example.com">samminails@example.com</a></p>
               </div>
             </div>
-            <div className="contact-form">
-              <div className="name-fields">
-                {/* Name Inputs */}
-                <input 
-                value={contactFormData.firstName}
-                name='firstName'
-                onChange={handleChange}
-                type="text" placeholder="First Name" />
-                <input 
-                value={contactFormData.lastName}
-                name='lastName'
-                onChange={handleChange}
-                type="text" placeholder="Last Name" />
+            <div className="detail">
+
+              <span className="icon icon-phone"> <PhoneInTalkIcon /> </span>
+              <div className="text">
+                <p>Phone</p>
+                <p>Call us for an appointment.</p>
+                <p>(425) 379-6178</p>
+                <p>Phone: <a href="tel:425-379-6178">425-379-6178</a></p>
               </div>
-              {/* Email */}
-              <input 
-              value={contactFormData.email}
-              name='email'
-              onChange={handleChange}
-              type="email" placeholder="Email" />
-              {/* Message */}
-              <textarea 
-              value={contactFormData.message}
-              name='message'
-              onChange={handleChange}
-              placeholder="Message"></textarea>
-              {emailSent ? <h3 style={{color:"green",margin:'0'}}>Email sent</h3> : <></>}
-              <button onClick={(e)=>sendEmail(e)}type="submit">Send</button>
             </div>
           </div>
-          <h1 className="footer">Footer</h1>
         </div>
-      );
-
-
-  
+        <ContactForm />
+      </div>
+      
+    </div>
+  );
 };
 
 export default Contact;
