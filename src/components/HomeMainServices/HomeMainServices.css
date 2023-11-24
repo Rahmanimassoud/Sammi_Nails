@@ -1,0 +1,113 @@
+.main-services{
+    grid-row: 5;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .main-services p{
+    background-color: #f0ece2;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  
+  
+  .first-service{
+    background-color: #c7b198;
+    display: flex;
+    width: 100%;
+    border-bottom: black;
+    justify-content: space-around;
+  }
+  
+  .first-service div:first-child{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    width: 40%
+  }
+  
+  .first-service div:first-child img{
+    min-width:40%;
+    width: 40%;
+    max-height:max-content;
+    border-radius: 30px;
+    padding:10px;
+  }
+  
+  .first-service div:nth-child(2){
+    padding:5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:flex-end;
+    text-align: right;
+    width: 50%;
+    margin: 0;
+  }
+  
+  .second-service{
+    background-color: #dfd3c3;
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+  
+  .second-service div:first-child{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    width:40%
+  }
+  
+  .second-service div:first-child img{
+    min-width:40%;
+    width: 40%;
+    max-height:max-content;
+    border-radius: 30px;
+    padding:10px;
+  }
+  
+  .second-service div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:flex-start;
+    text-align: left;
+    width: 40%;
+    margin: 0;
+  }
+  
+  .third-service{
+    background-color: #c7b198;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+  
+  .third-service div:first-child{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    width:40%
+  }
+  
+  .third-service div:first-child img{
+    min-width:40%;
+    width: 40%;
+    max-height:max-content;
+    border-radius: 30px;
+    padding:10px;
+  }
+  
+  .third-service div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:flex-end;
+    text-align: right;
+    width: 40%;
+    margin: 0;
+  }
+  

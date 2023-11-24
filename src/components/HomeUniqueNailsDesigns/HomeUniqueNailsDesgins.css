@@ -1,0 +1,50 @@
+/* After the hero image */
+  
+
+.after-hero-comp{
+  background-color: #dfd3c3;
+  grid-row: 2;
+  display: flex;
+  justify-content: space-around;
+}
+
+.unique-nails-designs{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start   ;
+  text-align: left;
+  width: 45%;
+  }
+  
+  .unique-nails-designs button{
+    background-image: linear-gradient(to right, #F09819 0%, #EDDE5D  51%, #F09819  100%);
+    padding: 5px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;        
+    border-color: transparent;    
+    border-radius: 10px;
+    display: block;
+    -webkit-text-stroke: 2px transparent;
+    margin-left: 0;
+    width: 50%;
+  }
+
+  .unique-nails-designs button:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .unique-nails-designs-image{
+    background-color:  #f0f0e4;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    /* grid-row: 2; */
+    }
+  
+  
