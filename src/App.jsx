@@ -15,18 +15,20 @@ function App() {
 
 
     <Navbar />
-    {/* <Home /> */}
-      <Contact/> 
+        <Routes>
+            <Route path='/' element={<Home/>}/>
+            <Route path='/contact' element={<Contact/>}/>
+            <Route path='/Gallery' element={<Gallery/>}/>
+            <Route path='/About' element={<About/>}/>
+        </Routes>
+      {/* <Contact/>  */}
 
       {/* <Gallery /> */}
 
       {/* <About/> */}
     <br />
-    <Footer />
 
-        {/* <Routes>
-            <Route path='/' element={<Home/>}/>
-        </Routes> */}
+    <Footer />
     </div>
   )
 }

@@ -11,19 +11,19 @@ const Navbar = () => {
     },
     {
       name: "Services",
-      route: "/services",
+      route: "/Services",
     },
     {
       name: "Gallery",
-      route: "/gallery",
+      route: "/Gallery",
     },
     {
       name: "About",
-      route: "/about",
+      route: "/About",
     },
     {
       name: "Contact",
-      route: "/contact",
+      route: "/Contact",
     },
   ];
 
