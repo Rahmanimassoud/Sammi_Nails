@@ -3,11 +3,12 @@
     display: flex;
     flex-direction: column;
     gap: 2px;
+    justify-content: center;
   }
 
   .main-services p{
     background-color: #f0ece2;
-    padding: 5px;
+    padding: 25px;
     border-radius: 10px;
   }
   
@@ -17,22 +18,23 @@
     display: flex;
     width: 100%;
     border-bottom: black;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;    
   }
   
   .first-service div:first-child{
     display: flex;
     justify-content:space-around;
     align-items: center;
-    width: 40%
+    width: 30%;
   }
   
   .first-service div:first-child img{
-    min-width:40%;
-    width: 40%;
+    width: 100%;
     max-height:max-content;
     border-radius: 30px;
     padding:10px;
+    
   }
   
   .first-service div:nth-child(2){
@@ -51,19 +53,19 @@
     display: flex;
     width: 100%;
     flex-direction: row-reverse;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   }
   
   .second-service div:first-child{
     display: flex;
     justify-content:space-around;
     align-items: center;
-    width:40%
+    width:30%
   }
   
   .second-service div:first-child img{
-    min-width:40%;
-    width: 40%;
+    width: 100%;
     max-height:max-content;
     border-radius: 30px;
     padding:10px;
@@ -75,7 +77,7 @@
     flex-direction: column;
     align-items:flex-start;
     text-align: left;
-    width: 40%;
+    width: 50%;
     margin: 0;
   }
   
@@ -83,19 +85,20 @@
     background-color: #c7b198;
     display: flex;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   }
   
+
   .third-service div:first-child{
     display: flex;
     justify-content:space-around;
     align-items: center;
-    width:40%
+    width:30%;
   }
   
   .third-service div:first-child img{
-    min-width:40%;
-    width: 40%;
+    width: 100%;
     max-height:max-content;
     border-radius: 30px;
     padding:10px;
@@ -107,7 +110,7 @@
     flex-direction: column;
     align-items:flex-end;
     text-align: right;
-    width: 40%;
+    width: 50%;
     margin: 0;
   }
   

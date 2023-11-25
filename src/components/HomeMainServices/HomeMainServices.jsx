@@ -3,7 +3,7 @@ const HomeMainServices = () => {
 
 
   return (
-    <div className="main-services">
+    <section className="main-services">
             <div className='first-service'>
                 <div>
                     <img src="https://images.pexels.com/photos/17056222/pexels-photo-17056222/free-photo-of-close-up-of-woman-doing-pedicure.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
@@ -35,7 +35,7 @@ const HomeMainServices = () => {
                         </p>
                     </div>
             </div>
-        </div>
+        </section>
   )
 }
 

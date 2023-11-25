@@ -5,6 +5,7 @@ import HomeUniqueNailsDesgins from '../../components/HomeUniqueNailsDesigns/Home
 import HomeServicesSection from '../../components/HomeServicesSection/HomeServicesSection';
 import HomeMainServices from '../../components/HomeMainServices/HomeMainServices';
 import HomeTestimonials from '../../components/HomeTestimonials/HomeTestimonials';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
 
@@ -27,7 +28,9 @@ const Home = () => {
               <div className="homepage-quote">
                   <div>
                     <h2>Life is not perfect, but your nails can be</h2>
-                    <button>Contact us now.</button>
+                    <Link to="/Contact">
+                        <button>Contact us now.</button>
+                    </Link>
                   </div>
               </div>
               {/* Main Services */}
@@ -41,8 +44,12 @@ const Home = () => {
                     <h2>Express Yourself with Unique Nails</h2>
                     <h3>Book an appointment today and let your nails shine with creativity.</h3>
                     <div className='cta-button-container'>
+                    <Link to="/Contact">
                         <button>Book</button>
+                  </Link>
+                    <Link to="/Services">
                         <button>Learn More</button>
+                    </Link>
                     </div>
               </div>
                   <div className="contact-area">

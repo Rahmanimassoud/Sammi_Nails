@@ -12,7 +12,7 @@ const HomeTestimonials = () => {
     const arrayOfReviews = [
         {
           name: "Amanda B.",
-          image: <AmandaPic/>,
+          image: AmandaPic,
           review: "10000% recommend this place, my go-to nail salon!!! They do such a good job by taking the time and care on your nails. Any shape, any design. Absolutely love!!",
           rating: "⭐⭐⭐⭐⭐",
         },
@@ -24,13 +24,13 @@ const HomeTestimonials = () => {
         },
         {
           name: "Elaine L.",
-          image: <ElainePic/>,
+          image: ElainePic,
           review: "I don't think I've ever felt this relaxed and de-stressed after a nail appt. I have been sick with a cold and then a flu and finally recovering and wanted a self-care day. I did the VIP pedicure (worth the price) and shellac French manicure and I am so happy with the quality of service and detail. Will definitely be back!.",
           rating: "⭐⭐⭐⭐⭐",
         },
         {
           name: "Rose C.",
-          image: <RosePic/>,
+          image: RosePic,
           review: "One of my go-to nail salon. I see my usual nail artist because she is highly skilled and more importantly for me; she is gentle. Pamper yourself and get the VIP treatments. Worth the money.",
           rating: "⭐⭐⭐⭐⭐",
         },
@@ -42,13 +42,13 @@ const HomeTestimonials = () => {
         },
         {
           name: "Katie R.",
-          image: <KatieR/>,
+          image: KatieR,
           review: "This place is amazing!! They have a great variety of spa options for getting your paws taken care of. The staff were all friendly and skilled. Plus, I don't think I've seen more colors and types of polish, dips, & etc. anywhere else. Definitely recommend coming here!!",
           rating: "⭐⭐⭐⭐⭐",
         },
         {
           name: "Mallerlyn V.",
-          image: <MallerynPic/>,
+          image: MallerynPic,
           review: "I just moved here from Minnesota and i have had the same nail lady for over 5 years now. I never thought i would find another salon that was as good as the one I had been visiting but LET ME TELL YOU! This place is so amazing! I got my nails done in a dip for such a good price! It was even an ombré. They were fast, efficient, kind, and they didn't hurt my fingers like so many other places do! Definitely check this place out you won't regret it! P.S they have a nice parking lot and offer you a large selection of drinks!",
   
           rating: "⭐⭐⭐⭐⭐",
@@ -74,8 +74,8 @@ const HomeTestimonials = () => {
                 <div className="testimonial">
                     <h3 className="rating">{customer.rating}</h3>
                     <p className="review">{customer.review}</p>
-                    <div>
-                        <img src= "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png" alt="" />
+                    <div className="customer">
+                        <img src={customer.image} alt="" />
                         <p>{customer.name}</p>
                     </div>
             </div>

@@ -5,11 +5,13 @@
     flex-direction: column;
     grid-row: 3;
     gap: 10px;
+    align-items: center;
   }
   
   .services-title{
     width: 70%;
-    margin: auto;
+    /* margin: auto; */
+    margin: 10px 0 0;
     text-align: center;
     background-color: #dfd3c3;
   }
@@ -21,7 +23,7 @@
     text-align: center;
     justify-content: space-between;
     width: 90%;
-    margin: auto;
+    margin: 0 auto 0 ;
   }
   
   .services-list img{
@@ -35,7 +37,7 @@
     width: 16%;
     background-image: linear-gradient(to right, #F09819 0%, #EDDE5D 51%, #F09819 100%);
 
-    margin: auto;
+    margin: 0 auto 0;
     padding: 5px 15px;
     text-align: center;
     text-transform: uppercase;
@@ -45,7 +47,7 @@
     box-shadow: 0 0 20px #eee;
     border-radius: 10px;
     border-color: transparent;
-    width: 50%;
+    width: 100%;
   }
 
   .home-services-section button:hover {
@@ -66,4 +68,12 @@
 .services-list div h3{
     width: 70%;
     margin-bottom: 0;
+  }
+
+  .left{
+    align-self: flex-end;
+  }
+
+  .right{
+    align-self: flex-start;
   }

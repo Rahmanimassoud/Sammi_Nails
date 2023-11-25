@@ -63,7 +63,7 @@ export const ContactForm = () => {
           <ContactForm />
            */}
     return (
-        <div>
+        <section>
             <form className="contact-form">
 
                 <div className="name-fields">
@@ -97,6 +97,6 @@ export const ContactForm = () => {
                     placeholder="Message"></textarea>
                 <button onClick={(e) => sendEmail(e)} type="submit">Send</button>
             </form>
-        </div>
+        </section>
     )
 }

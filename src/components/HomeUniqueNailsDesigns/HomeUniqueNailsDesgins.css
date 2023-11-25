@@ -2,7 +2,6 @@
   
 
 .after-hero-comp{
-  background-color: #dfd3c3;
   grid-row: 2;
   display: flex;
   justify-content: space-around;
@@ -12,12 +11,12 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start   ;
+  align-items: flex-start;
   text-align: left;
   width: 45%;
   }
   
-  .unique-nails-designs button{
+  .learn-more-button{
     background-image: linear-gradient(to right, #F09819 0%, #EDDE5D  51%, #F09819  100%);
     padding: 5px 20px;
     text-align: center;
@@ -30,7 +29,7 @@
     display: block;
     -webkit-text-stroke: 2px transparent;
     margin-left: 0;
-    width: 50%;
+    width: 100%;
   }
 
   .unique-nails-designs button:hover {
@@ -40,6 +39,7 @@
   }
 
   .unique-nails-designs-image{
+    width: 40%;
     background-color:  #f0f0e4;
     padding: 5px;
     display: flex;
@@ -47,4 +47,8 @@
     /* grid-row: 2; */
     }
   
+    .unique-nails-designs-image img{
+      width: fit-content;
+      max-width: 100%;
+    }
   
