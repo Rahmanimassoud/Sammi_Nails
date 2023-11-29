@@ -41,12 +41,12 @@ line-height: 150%; /* 30px */
 }
   
   .services-list{
-  
-    width:100%;
+    width: 100%;
     display: flex;
     text-align: center;
-    justify-content: center;
-    gap: 90px;
+    justify-content: space-evenly;
+    gap: 50px;
+    max-width: 1800px;
   }
 
   .services-list div > h4{

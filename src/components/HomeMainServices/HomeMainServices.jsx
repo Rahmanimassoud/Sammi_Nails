@@ -23,21 +23,19 @@ const HomeMainServices = () => {
   return (
     <section className="main-services margin">
          {arrayOfServices.map((service)=>(
-            <div className= {service.title}key={service.title}>
-                    <div className={`${service.title}-container`}>
-                        <h2>{service.title}</h2>
-                        <p>{service.description}</p>
-                        <Link to="/Services">
-                        <button className="services-button">Learn More</button>
-                    </Link>
+            <div className='service-div' key={service.title}>
+                    <div className={`service-container ${service.title}-container`}>
+                    <img src={service.img} className="service-image" alt={service.title}/>              
+                        <div className={`${service.title}-content`}>
+                            <h2>{service.title}</h2>
+                            <p>{service.description}</p>
+                            <Link to="/Services">
+                            <button className="services-button">Learn More</button>
+                            </Link>
+                        </div>
                     </div>
             </div>
          ))}
-          {arrayOfServices.map((service)=>(
-            <div className={`${service.title}-image`}>
-              <img src={service.img} className="service-image" alt={service.title}/>
-            </div>
-          ))}
         </section>
   )
 }

@@ -10,12 +10,16 @@
     width: 70%;
     /* border-radius: 20px; */
     min-height: 90%;
+    gap: 50px;
 }
 .testimonial{
-    border-radius: 20px;
-    width: 90%;
-    margin: auto;
-    margin-bottom: 10px;
+  gap: 25px;
+  border-radius: 20px;
+  width: 90%;
+  margin: auto;
+  flex-direction: column;
+  display: flex;
+  margin-bottom: 10px;
 }
   .testimonials h2{
     margin:0;

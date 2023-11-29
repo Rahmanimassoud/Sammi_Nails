@@ -31,7 +31,7 @@ const Home = () => {
                     <h2>Life is not perfect, but your nails can be</h2>
                   </div>
                     <Link to="/Contact">
-                        <button>Contact us now.</button>
+                        <button>Contact us now</button>
                     </Link>
               </div>
               {/* Main Services */}
