@@ -1,69 +1,107 @@
   
   .home-services-section{
-    background-color: #f0ece2;
     display: flex;
     flex-direction: column;
     grid-row: 3;
     gap: 10px;
     align-items: center;
   }
-  
   .services-title{
-    width: 70%;
-    /* margin: auto; */
-    margin: 10px 0 0;
-    text-align: center;
-    background-color: #dfd3c3;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .services-title h2{
+    color: #000;
+    margin: auto;
+text-align: center;
+/* Heading/H2 */
+font-family: Roboto;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: 120%; /* 57.6px */
+width: 100%;
   }
   
+.services-title p{
+  margin: auto;
+  width: 940px;
+  color: var(--Black, #000);
+text-align: center;
+
+/* Text/Large/Normal */
+font-family: Roboto;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 30px */
+}
+  
   .services-list{
-    border-radius: 25px;
-    padding: 30px;
+  
+    width:100%;
     display: flex;
     text-align: center;
-    justify-content: space-between;
-    width: 90%;
-    margin: 0 auto 0 ;
+    justify-content: center;
+    gap: 90px;
+  }
+
+  .services-list div > h4{
+    color: var(--Black, #000);
+text-align: center;
+
+/* Heading/H4 */
+font-family: Roboto;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: 130%; /* 41.6px */
+  }
+
+  .services-list div > p{
+ color: var(--Black, #000);
+text-align: center;
+
+/* Text/Large/Normal */
+font-family: Roboto;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 30px */
   }
   
   .services-list img{
-    width: 70%;
-    margin: auto;
-    margin-top: 30px;
-    border-radius: 25px;
+    width: 363px;
+    height: fit-content;
+    flex-shrink: 0;
   } 
   
   .home-services-section button{
-    width: 16%;
-    background-image: linear-gradient(to right, #F09819 0%, #EDDE5D 51%, #F09819 100%);
-
-    margin: 0 auto 0;
-    padding: 5px 15px;
-    text-align: center;
-    text-transform: uppercase;
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: white;
-    box-shadow: 0 0 20px #eee;
-    border-radius: 10px;
-    border-color: transparent;
-    width: 100%;
+    display: flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    background-color: transparent;
+    margin:30px  auto;
   }
 
-  .home-services-section button:hover {
-    background-position: right center; /* change the direction of the change here */
-    color: #fff;
-    text-decoration: none;
-  }
+
   
 
 .services-list div{
     display: flex;
     flex-direction: column;
-    width: 275px;          
+    width: 363px;
+    flex-shrink: 0;
+    justify-content: space-around;
+    height: 100%;
+    gap: 30px;
     align-items: center;
-    background-color: #dfd3c3;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;    }
+    }
 
 .services-list div h3{
     width: 70%;
@@ -71,9 +109,35 @@
   }
 
   .left{
-    align-self: flex-end;
+    align-self: center;
   }
 
   .right{
-    align-self: flex-start;
+    align-self: center;
   }
+
+  @media screen and (min-width: 768px) and (max-width:1099px){
+    .home-services-section{
+    margin: 0 40px;
+      
+    }
+  }
+  @media screen and (max-width:767px) {
+    .home-services-section{
+      grid-template-rows:0.6fr 0.1fr 0.5fr 0.1fr 1fr 0.2fr 0.1fr;
+    }
+    .services-title{
+      width: 50%;
+    }
+    .services-title p{
+      width: auto;
+    }
+    .services-list{
+      flex-direction: column;
+    }
+    .services-list div{
+      height: auto;
+    }
+  }
+
+ 

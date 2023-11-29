@@ -10,6 +10,7 @@ import { Link } from 'react-router-dom';
 const Home = () => {
 
     return (
+      <>
         <div id="homepage">
               {/* Hero image section */}
               
@@ -28,10 +29,10 @@ const Home = () => {
               <div className="homepage-quote">
                   <div>
                     <h2>Life is not perfect, but your nails can be</h2>
+                  </div>
                     <Link to="/Contact">
                         <button>Contact us now.</button>
                     </Link>
-                  </div>
               </div>
               {/* Main Services */}
 
@@ -42,13 +43,13 @@ const Home = () => {
 
               <div className="cta">
                     <h2>Express Yourself with Unique Nails</h2>
-                    <h3>Book an appointment today and let your nails shine with creativity.</h3>
+                    <p>Book an appointment today and let your nails shine with creativity.</p>
                     <div className='cta-button-container'>
                     <Link to="/Contact">
-                        <button>Book</button>
+                        <button className='book-btn'>Book</button>
                   </Link>
                     <Link to="/Services">
-                        <button>Learn More</button>
+                        <button  className='learn-more'>Learn More</button>
                     </Link>
                     </div>
               </div>
@@ -85,6 +86,7 @@ const Home = () => {
                               </div>
                   </div>
               </div>
+      </>
         )
 };
 

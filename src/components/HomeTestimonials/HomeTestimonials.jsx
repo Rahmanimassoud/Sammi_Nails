@@ -25,7 +25,7 @@ const HomeTestimonials = () => {
         {
           name: "Elaine L.",
           image: ElainePic,
-          review: "I don't think I've ever felt this relaxed and de-stressed after a nail appt. I have been sick with a cold and then a flu and finally recovering and wanted a self-care day. I did the VIP pedicure (worth the price) and shellac French manicure and I am so happy with the quality of service and detail. Will definitely be back!.",
+          review: "I don't think I've ever felt this relaxed and de-stressed after a nail appt. I have been sick with a cold and then a flu and finally recovering and wanted a self-care day. I did the VIP pedicure (worth the price)...",
           rating: "⭐⭐⭐⭐⭐",
         },
         {
@@ -49,7 +49,7 @@ const HomeTestimonials = () => {
         {
           name: "Mallerlyn V.",
           image: MallerynPic,
-          review: "I just moved here from Minnesota and i have had the same nail lady for over 5 years now. I never thought i would find another salon that was as good as the one I had been visiting but LET ME TELL YOU! This place is so amazing! I got my nails done in a dip for such a good price! It was even an ombré. They were fast, efficient, kind, and they didn't hurt my fingers like so many other places do! Definitely check this place out you won't regret it! P.S they have a nice parking lot and offer you a large selection of drinks!",
+          review: "I just moved here from Minnesota and i have had the same nail lady for over 5 years now. I never thought i would find another salon that was as good as the one I had been visiting but LET ME TELL YOU! This place is so amazing! I got my nails done in a dip for such a good price! It was even an ombré. They were fast, efficient, kind, and they didn't hurt my fingers...",
   
           rating: "⭐⭐⭐⭐⭐",
         },
